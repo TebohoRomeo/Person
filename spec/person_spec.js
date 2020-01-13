@@ -1,6 +1,6 @@
-let erson = require("../src/person")
+let person = require("../src/person")
 
-const myPerson = new erson("Ryan",30,"male",["being a hardarse","agile", "ssd hard drives"])
+const myPerson = new person.Person("Ryan",30,"male",["being a hardarse","agile", "ssd hard drives"])
 
 
 describe("Person class", function(){
