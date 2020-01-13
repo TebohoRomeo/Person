@@ -1,7 +1,8 @@
-let person = require("../src/person")
+let erson = require("../src/person")
 
-const myPerson = new person("Ryan",30,"male",["being a hardarse","agile", "ssd hard drives"])
-// console.log(p.name) 
+const myPerson = new erson("Ryan",30,"male",["being a hardarse","agile", "ssd hard drives"])
+
+
 describe("Person class", function(){
 
     it("checks if hello() contains a message", function(){
