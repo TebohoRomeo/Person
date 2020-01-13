@@ -1,6 +1,6 @@
 let person = require("../src/person")
 
-const myPerson = new person.("Ryan",30,"male",["being a hardarse","agile", "ssd hard drives"])
+const myPerson = new person("Ryan",30,"male",["being a hardarse","agile", "ssd hard drives"])
 
 
 describe("Person class", function(){
