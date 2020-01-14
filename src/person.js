@@ -26,8 +26,6 @@ class Person {
             }
         }
         return greet;
-        
-        // For loop for interest array...
     }
     
 }
