@@ -1,9 +1,9 @@
-let person = require('../src/person');
+let Person = require('../src/person');
 
 describe('Person class', function() {
 // Test for Romeo
   it('Records the age', function() {
-    const romeo = new person('Romeo', 30, 'male', [
+    const romeo = new Person('Romeo', 30, 'male', [
       'being a hardarse',
       'agile',
       'ssd hard drives',
@@ -13,7 +13,7 @@ describe('Person class', function() {
   });
 
   it('checks if hello() contains a message', function() {
-    const romeo = new person('Romeo', 22, 'male', [
+    const romeo = new Person('Romeo', 22, 'male', [
       'being a hardarse',
       'agile',
       'ssd hard drives',
@@ -27,7 +27,7 @@ describe('Person class', function() {
 //   Test for Mudi
 
   it('checks if hello() contains a message', function() {
-    const mudi = new person('Mudi', 30, 'male', [
+    const mudi = new Person('Mudi', 30, 'male', [
       'being a hardarse',
       'nerdy',
       'ssd hard drives',
@@ -39,7 +39,7 @@ describe('Person class', function() {
   });
 
   it('Records the age', function() {
-    const mudi = new person('Mudi', 30, 'male', [
+    const mudi = new Person('Mudi', 30, 'male', [
       'being a hardarse',
       'agile',
       'ssd hard drives',
@@ -51,7 +51,7 @@ describe('Person class', function() {
 //   Test for Ryan
 
 it('Records the age', function() {
-    const ryan = new person('Ryan', 30, 'male', [
+    const ryan = new Person('Ryan', 30, 'male', [
       'being a hardarse',
       'agile',
       'ssd hard drives',
@@ -61,7 +61,7 @@ it('Records the age', function() {
   });
 
   it('checks if hello() contains a message', function() {
-    const ryan = new person('Ryan', 30, 'male', [
+    const ryan = new Person('Ryan', 30, 'male', [
       'being a hardarse',
       'agile',
       'ssd hard drives',
