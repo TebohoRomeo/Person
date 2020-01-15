@@ -12,31 +12,14 @@ class Person {
 
   hello() {
     let greet =
-      'Hello, my name is' +
-      ' ' +
+      'Hello, my name is ' +
       this.name +
-      ' ' +
-      'and I am' +
-      ' ' +
+      ' and I am ' +
       this.age +
-      ' ' +
-      'Years old' +
-      ' ' +
+      ' Years old ' +
       this.gender +
       '.' +
-      ' My interests are '
-
-    for (let i = 0; i < this.interest.length; i++){
-        if (i == this.interest.length - 2){
-            greet += this.interest[i] + " and ";
-        }
-        else if (i == this.interest.length - 1){
-            greet += this.interest[i] + ".";
-        }
-        else {
-            greet += this.interest[i] + ", ";
-        }
-    }
+      ' My interests are ' + this.interest[0] + ', ' + this.interest[1] + ' and ' + this.interest[2] + '.';
     return greet;
   }
 }
@@ -48,6 +31,6 @@ let person = new Person('Ryan', 30, 'male', [
 ]);
 
 let greeting = person.hello();
-// console.log(greeting);
+console.log(greeting);
 
 module.exports = Person;
