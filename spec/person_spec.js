@@ -1,7 +1,7 @@
 let Person = require('../src/person');
 
 describe('Person class', function() {
-// Test for Romeo
+  
   it('Records the age', function() {
     const romeo = new Person('Romeo', 30, 'male', [
       'being a hardarse',
@@ -24,8 +24,6 @@ describe('Person class', function() {
     );
   });
 
-//   Test for Mudi
-
   it('checks if hello() contains a message', function() {
     const mudi = new Person('Mudi', 30, 'male', [
       'being a hardarse',
@@ -47,8 +45,6 @@ describe('Person class', function() {
 
     expect(mudi.age).toEqual(30);
   });
-
-//   Test for Ryan
 
 it('Records the age', function() {
     const ryan = new Person('Ryan', 30, 'male', [
