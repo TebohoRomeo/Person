@@ -30,41 +30,28 @@ describe('Person class', function() {
     ])
   })
 
+  it('Checks if the function is called', function(){
+    spyOn(person, 'hello')
+    person.hello()
+    expect(person.hello).toHaveBeenCalled()
+  })
+
+  it('Should be called x times', function(){
+    spyOn(person, 'hello')
+    person.hello()
+    person.hello()
+    expect(person.hello).toHaveBeenCalledTimes(2)
+  })
+
+  it('Should be called x times', function(){
+    spyOn(person, 'hello')
+    person.hello()
+    expect(person.hello).toHaveBeenCalledWith()
+  })
+
   it('checks if hello() contains a message', function() {
     expect(person.hello()).toEqual(
       'Hello, my name is Ryan and I am 30 Years old male. My interests are being a hardarse, agile and ssd hard drives.'
     );
   });
-
-//   it('Records the age', function() {
-//     const mudi = new Person('Mudi', 30, 'male', [
-//       'being a hardarse',
-//       'agile',
-//       'ssd hard drives',
-//     ]);
-
-//     expect(mudi.age).toEqual(30);
-//   });
-
-// it('Records the age', function() {
-//     const ryan = new Person('Ryan', 30, 'male', [
-//       'being a hardarse',
-//       'agile',
-//       'ssd hard drives',
-//     ]);
-
-//     expect(ryan.age).toEqual(30);
-//   });
-
-//   it('checks if hello() contains a message', function() {
-//     const ryan = new Person('Ryan', 30, 'male', [
-//       'being a hardarse',
-//       'agile',
-//       'ssd hard drives',
-//     ]);
-
-//     expect(ryan.hello()).toEqual(
-//       'Hello, my name is Ryan and I am 30 Years old male. My interests are being a hardarse, agile and ssd hard drives.'
-//     );
-//   });
 });
